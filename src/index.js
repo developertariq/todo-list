@@ -1,12 +1,12 @@
 /* eslint no-unsafe-optional-chaining: ["error", { "disallowArithmeticOperators": false }] */
 
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
 import {
   addNewTask, deleteTask, editTask, displayTaskList, completeTask,
 } from './todolist.js';
 import mainList from './loadlist.js';
-import '@fortawesome/fontawesome-free/js/all.js';
+// import '@fortawesome/fontawesome-free/js/all.js';
 
 let newDescription = '';
 

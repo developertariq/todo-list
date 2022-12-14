@@ -36,14 +36,17 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/i,
+        include: path.resolve(__dirname, 'src'),
         loader: 'babel-loader',
       },
       {
         test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
         use: [stylesHandler, 'css-loader'],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        include: path.resolve(__dirname, 'src'),
         type: 'asset',
       },
 
