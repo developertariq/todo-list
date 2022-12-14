@@ -8,15 +8,17 @@ const isProduction = process.env.NODE_ENV === 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-  performance: {
-    hints: false,
-  },
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
   stats: {
     warnings: false,
+  },
+  performance: {
+    hints: false,
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
   },
   devServer: {
     open: true,
